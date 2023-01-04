@@ -45,6 +45,7 @@ body {
   background-color:	#800c23;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 #navbar ul {
   display: flex;
