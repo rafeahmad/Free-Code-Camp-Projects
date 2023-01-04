@@ -1,0 +1,189 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+
+  body {
+    background: black;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  
+  @media screen and (max-width: 320px) {
+    body {
+      height: 100%;
+    }
+    form {
+      height: 100%;
+    }
+  }
+  
+
+  #container{
+     width: 100%;
+    margin: 0px auto;
+  }
+  
+  header{
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 5px;
+  }
+  #title {
+    font-size: 40px;
+    
+  }
+  #description{
+    font-size: 20px;
+    margin-top: 5px;
+    
+  }
+
+  
+                       /*.......form....... */
+  
+  form{
+    margin: 30px 300px;
+    background-color: #e2a47cfc;
+    color: black;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    form {
+       width: 50%;
+       position: relative;
+       right: 130px;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    form {
+       min-width: 50%;
+       position: relative;
+       right: 200px; 
+    }
+  }
+
+  @media screen and (max-width: 512px) {
+    form {
+       min-width: 50%;
+       position: relative;
+       right: 220px; 
+    }
+  }
+  
+  
+  
+  
+  #form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+    font-weight: bold; 
+  }
+  
+  #form-group h4 {
+    font-size: 20px;
+    margin-bottom: -2px;
+  }
+  
+  label{
+    margin-left: 1px;
+    display: block;
+  }
+  
+  .form-control{
+    padding: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  button,
+  select,
+  textarea{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  select{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 375px) {
+    select {
+        font-size: 10px;
+    }
+  }
+  
+  fieldset{
+    width: 40%;
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 375px) {
+    fieldset {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    fieldset {
+      width: 100%;
+    }
+  }
+  
+  legend {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  
+  
+  .input-radio {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 30px;
+    height: 16px;
+    
+    
+  }
+  
+  .input-checkbox{
+    width: 40px;
+    height: 18px;
+    margin-top: 14px;
+  }
+  
+  .text {
+    font-size: 24px;
+    margin: 10px 4px;
+    margin-bottom: 2px;
+  }
+  
+  button{
+    background-color: #0ead0e;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+  }
+  button:hover{
+    background-color: green;
+    font-size: 20px;
+  }

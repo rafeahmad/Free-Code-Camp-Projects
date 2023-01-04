@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+
+<body>
+ 
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Technical Documentation Page</title>
+</head>
+<body>
+    
+
+
+<nav id="navbar" class="nav">
+  
+    <header class="Intro">JS Documentation</header>
+    <ul>
+      <li>
+        <a href="#JS_Introduction" class="nav-link">JS Introduction</a>
+      </li>
+       <li>
+        <a href="#Hello_World_Program" class="nav-link">Hello World Program</a>
+      </li>
+       <li>
+        <a href="#Variables" class="nav-link">Variables</a>
+      </li>
+       <li>
+        <a href="#Data_types" class="nav-link">Data Types</a>
+      </li>
+       <li>
+        <a href="#Operators" class="nav-link">Operators</a>
+      </li>
+       <li>
+        <a href="#Function_declarations" class="nav-link">Function declarations</a>
+      </li>
+       <li>
+        <a href="#Events" class="nav-link">Events</a>
+      </li>
+        <li>
+        <a href="#if...else_statement" class="nav-link">if...else statement</a>
+      </li>
+        <li>
+        <a href="#Reference" class="nav-link">Reference</a>
+      </li>
+    </ul>
+    
+  </nav>
+  
+  
+  <main id="main-doc">
+    
+    <section class="main-section" id="JS_Introduction">
+      
+      <header>JS Introduction</header>
+      
+      <p>JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc.</p>
+      <br>
+      <h3>What is JavaScript?</h3>
+      <p>JavaScript is a powerful programming language that can add interactivity to a website. It was invented by Brendan Eich. <br><br>
+        JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:
+        <ul>
+          <li>Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.</li>
+          <li>Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.</li>
+          <li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.</li>
+        </ul>
+  </p>
+      
+    </section>
+    
+   <br>
+   <hr>
+  
+     <section class="main-section" id="Hello_World_Program">
+      <header>Hello World Program</header>
+       
+       <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example.</p>
+       
+       <ol>
+         <li>Go to your test site and create a new folder named scripts. Within the scripts folder, create a new text document called main.js, and save it.</li>
+         
+         <li>In your index.html file, enter this code on a new line, just before the closing </body> tag: <pre><code> &ltscript src="scripts/main.js"> &lt/script> </code></pre></li>
+  
+         <li>Add this code to the main.js file:
+          <pre> <code>const myHeading = document.querySelector('h1'); </code> <br>
+  <code>myHeading.textContent = 'Hello world!'; </code></pre>
+  </li>
+       </ol>
+    </section>
+    
+      <br>
+  
+  
+     <section class="main-section" id="Variables">
+      <header>Variables</header>
+       
+       <p>Variables are containers that store values. You start by declaring a variable with the let keyword, followed by the name you give to the variable: 
+         <pre><code>let myVariable;</code></pre>
+       </p>
+  
+       <p>A semicolon at the end of a line indicates where a statement ends. It is only required when you need to separate statements on a single line. However, some people believe it's good practice to have semicolons at the end of each statement. There are other rules for when you should and shouldn't use semicolons.</p>
+  
+       <p>JavaScript is case sensitive. This means myVariable is not the same as myvariable. If you have problems in your code, check the case!</p>
+  
+       <p>After declaring a variable, you can give it a value:
+    <pre><code>myVariable = 'Bob';</code></pre>
+  <br>
+       Also, you can do both these operations on the same line:
+    <pre><code>let myVariable = 'Bob';</code></pre>
+  <br>
+  
+      After assigning a value to a variable, you can change it later in the code:
+    <pre><code>let myVariable = 'Bob'; <br>
+      myVariable = 'Steve';</code></pre>
+  </p>
+  
+    </section>
+    
+    <br>
+  
+  
+     <section class="main-section" id="Data_types">
+      <header>Data Types</header>
+       
+       <p>String: This is a sequence of text known as a string. To signify that the value is a string, enclose it in single quote marks.
+         <pre><code>let myVariable = 'Bob';</code></pre>
+       </p>
+  
+      <p>Number: 	This is a number. Numbers don't have quotes around them.
+        <pre><code>let myVariable = 10;</code></pre>
+       </p>
+  
+       <p>Boolean: This is a True/False value. The words true and false are special keywords that don't need quote marks.
+          <pre><code>let myVariable = true;</code></pre>
+  </p>
+  
+       <p>Array: This is a structure that allows you to store multiple values in a single reference.
+         <pre><code>let myVariable = [1,'Bob','Steve',10];</code></pre>
+         Refer to each member of the array like this:
+         <pre><code>myVariable[0], myVariable[1],</code></pre>
+  </p>
+  
+        <p>Object: This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn.
+           <pre><code>let myVariable = document.querySelector('h1');</code></pre>
+  </p>
+  
+     <p>So why do we need variables? Variables are necessary to do anything interesting in programming. If values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or change an image displayed in an image gallery.</p>
+    </section>
+   
+    <br>
+  
+  
+     <section class="main-section"  id="Operators">
+      <header>Operators</header>
+       
+       <p>An operator is a mathematical symbol that produces a result based on two values (or variables). In the following table, you can see some of the simplest operators, along with some examples to try in the JavaScript console.</p>
+       
+       <p>Addition(+): Add two numbers together or combine two strings.
+         <pre><code>6 + 9;  <br>
+  'Hello ' + 'world!';</code></pre>
+       </p>
+  
+      <p>
+        Substraction,Multiplication,Division(-,*,/): These do what you'd expect them to do in basic math.
+        <pre><code>9 - 3; <br>
+  8 * 2; // multiply in JS is an asterisk  <br>
+  9 / 3;</code></pre>
+      </p>
+  
+      <p>Assignment(=): As you've seen already: this assigns a value to a variable.
+        <pre><code>	let myVariable = 'Bob';</code></pre>
+  </p>
+  
+      <p>Strict equality(===): This performs a test to see if two values are equal. It returns a true/false (Boolean) result.
+        <pre><code>let myVariable = 3;   <br>
+  myVariable === 4;</code></pre>
+  </p>
+  
+      <p>Not, Does-not-equal(!,!==): This returns the logically opposite value of what it precedes. It turns a true into a false, etc.. When it is used alongside the Equality operator, the negation operator tests whether two values are not equal.</p>
+    </section>
+    
+  <br>
+  
+  
+  <section class="main-section" id="Function_declarations">
+    <header>Function declarations</header>
+    
+    <p>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions. For example:
+      <pre><code>let myVariable = document.querySelector('h1');</code>
+      <br>
+            <code>alert('hello!');</code>
+      </pre>
+    </p>
+  
+     <p>These functions, document.querySelector and alert, are built into the browser. 
+       <br><br>
+  
+  If you see something which looks like a variable name, but it's followed by parentheses— () —it is likely a function. Functions often take arguments: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.
+   
+       <br><br>
+           
+  For example, the alert() function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display.</p>
+    
+    <p>You can also define your own functions. In the next example, we create a simple function which takes two numbers as arguments and multiplies them:
+      <pre> <code>function multiply(num1,num2) {
+<br>     let result = num1 * num2;
+<br>     return result;
+  }</code> </pre>
+      Try running this in the console; then test with several arguments. For example:
+      <pre><code>multiply(4, 7);
+ <br>     multiply(20, 20);
+ <br>     multiply(0.5, 3);</code></pre>
+  </p>
+  </section>
+  
+  <br>
+  
+  
+  <section class="main-section" id="Events">
+    <header>Events</header>
+    
+    <p>Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the click event, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:
+      <pre><code>document.querySelector('html').addEventListener('click', function () {
+ <br>         alert('Ouch! Stop poking me!');
+ <br>           });
+  </code></pre>
+    </p>
+  
+     <p>There are many ways to attach an event handler to an element. Here we select the &lthtml> element. We then call its <b>addEventListener()</b> function, passing in the name of the event to listen to ('click') and a function to run when the event happens.
+       <pre><code>let myHTML = document.querySelector('html');
+<br>      myHTML.addEventListener('click', function () {
+<br>         alert('Ouch! Stop poking me!');
+<br>       });</code></pre>
+  </p>
+  
+    <p>The functions we just passed to <b>addEventListener()</b> here are called anonymous functions, because they don't have a name. There's an alternative way of writing anonymous functions, which we call an arrow function. An arrow function uses <b>() =></b> instead of <b>function ()</b>:
+      <pre><code>document.querySelector('html').addEventListener('click', () => {
+<br>       alert('Ouch! Stop poking me!');
+<br>         });</code></pre>
+  </p>
+  </section>
+  
+   <br>
+  
+  
+  <section class="main-section" id="if...else_statement">
+    <header>if...else statement</header>
+    
+    <p>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the if...else statement. For example:
+      <pre><code>let iceCream = 'chocolate';
+<br>  if (iceCream === 'chocolate') {
+<br>    alert('Yay, I love chocolate ice cream!');
+<br>    } else {
+<br>   alert('Awwww, but chocolate is my favorite…');
+  }</code></pre>
+    
+    The expression inside the if () is the test. This uses the strict equality operator (as described above) to compare the variable iceCream with the string chocolate to see if the two are equal. If this comparison returns true, the first block of code runs. If the comparison is not true, the second block of code—after the else statement—runs instead.
+    </p>
+    
+  </section>
+
+<br>
+
+
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    
+    <p>
+        All the documentation in this page is taken from 
+      
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">MDN</a>
+        </li>
+      </ul>
+              </p>
+    
+  </section>
+
+
+
+  </main>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>FCC Survey form</title>
+</head>
+<body>
+
+<div id="container">
+  <header>
+  <h1 id="title">Student Feedback Form</h1>
+  <p id="description"><i> Thank you for taking the time to help us improve our courses</i></p>
+    </header>
+  
+  <form action="" id="survey-form">
+    <div id="form-group">
+      <label id="name-label" for="name"><h4>Name</h4></label>
+      <input type="text" id="name" name="name" placeholder="Enter your Name" class="form-control" required>
+    </div>
+    
+      <div id="form-group">
+      <label id="email-label" for="email"><h4>Email</h4></label>
+      <input type="email" id="email" name="email" placeholder="Enter your Email" class="form-control" required>
+    </div>
+    
+      <div id="form-group">
+      <label id="number-label" for="number"><h4>Age</h4></label>
+      <input type="number" id="number" name="age" min="10" max="99" placeholder="Age" class="form-control" required>
+    </div>
+    
+    <div id="form-group">
+      <select name="home" id="dropdown">
+        <option disabled selected value="">Select your hometown</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="bangalore">Bangalore</option>
+        <option value="hyderabad">Hydearabad</option>
+        <option value="hyderabad">Chennai</option>
+        <option value="hyderabad">Patna</option>
+        <option value="hyderabad">Other</option>
+      </select>
+    </div>
+    
+    <div id="form-group">
+      <fieldset>
+        <legend>Gender</legend>
+      <label for="">
+        <input type="radio" name="user-recommend" value="male" class="input-radio">Male
+      </label>
+      <label for="">
+        <input type="radio" name="user-recommend" value="female" class="input-radio">Female
+      </label>
+       <label for="">
+        <input type="radio" name="user-recommend" value="other" class="input-radio">Other
+      </label>
+        </fieldset>
+    </div>
+    
+    
+    
+    <div id="form-group">
+      
+      <p class="text">What did you like the most?</p>
+      <label>
+        <input type="checkbox" name="checkbox" value="project" class="input-checkbox">
+        Project
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox" value="Challenges" class="input-checkbox">
+        Challenges
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox" value="practical" class="input-checkbox">
+        Practical
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox" value="theory" class="input-checkbox">
+        Theory
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox" value="mentor-guide" class="input-checkbox">
+        Mentor-guide
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox" value="open-source-community" class="input-checkbox">
+        Open Source Community
+      </label>
+        <label>
+        <input type="checkbox" name="checkbox" value="doubt-class" class="input-checkbox">
+        Doubt Class
+      </label>
+       
+    </div>
+    
+    <div id="form-group">
+      <p class="text">Give your comments or suggestions :</p>
+      <textarea name="messages" id="messages" cols="50" rows="10" placeholder="type here......."></textarea>
+    </div>
+
+<div id="form-group">
+  <button id="submit">Submit</button>
+</div>
+    
+    
+  </form>
+</div>
+
+</body>
+</html>
